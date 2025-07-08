@@ -21,15 +21,6 @@ main .slide .swiper-wrapper .swiper-slide:nth-child(1){
 main .slide .swiper-wrapper .swiper-slide:nth-child(2){
     background: url(../images/main_page/slide/bg2.jpg) no-repeat center /cover;
 }
-main .slide .swiper-wrapper .swiper-slide:nth-child(3){
-    background: url(../images/main_page/slide/bg1.jpg) no-repeat center /cover;
-}/* 나중에 사진 구하면 수정 */
-main .slide .swiper-wrapper .swiper-slide:nth-child(4){
-    background: url(../images/main_page/slide/bg2.jpg) no-repeat center /cover;
-}/* 나중에 사진 구하면 수정 */
-main .slide .swiper-wrapper .swiper-slide:nth-child(5){
-    background: url(../images/main_page/slide/bg1.jpg) no-repeat center /cover;
-}/* 나중에 사진 구하면 수정 */
 main .slide .swiper-wrapper .swiper-slide .slide_text{
     width: max-content;
     position: absolute; bottom: 100px; left: 50%; width: 100%; 
@@ -42,7 +33,7 @@ main .slide .swiper-wrapper .swiper-slide .slide_text h1{
 main .slide .swiper-wrapper .swiper-slide .slide_text p{
     font-size: 0.75rem; color: #777;
     margin-bottom: 30px; line-height: 150%;
-    padding: 10px;
+    padding: 10px; max-width: 420px; min-width: 320px; margin: 0 auto;
 }
 main .slide .swiper-wrapper .swiper-slide .slide_text button{
     font-size: 0.875rem; padding: 10px 20px;
