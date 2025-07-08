@@ -1,0 +1,14 @@
+@media screen and (max-width:1349px){ /* 태블릿 */
+    /* =====================================헤더 */
+    header .header_bottom .h_nav nav>a{margin-right: 10px;}
+    /* =====================================헤더 끝 */
+    /* =====================================슬라이드 */
+    main .slide .swiper-wrapper{height: 500px;}
+    main .slide .swiper-wrapper .swiper-slide .slide_text h1{
+        font-size: 1.875rem;
+    }
+    main .slide .swiper-wrapper .swiper-slide .slide_text p{
+        margin-bottom: 20px;
+    }
+    /* =====================================슬라이드 끝 */
+}

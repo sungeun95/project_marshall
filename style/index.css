@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+}
+main > * {text-align: center;}
+main{
+    position: absolute; top: 0; left: 0; z-index: 50;width: 100%;
+}
+main .slide{
+    width: 100%;
+}
+main .slide .swiper-wrapper{width: 100%; height: 920px;}
+main .slide .swiper-wrapper .swiper-slide{
+    width: 100%; height: 100%;
+    position: relative;
+}
+main .slide .swiper-wrapper .swiper-slide:nth-child(1){
+    background: url(../images/main_page/slide/bg1.jpg) no-repeat center /cover;
+}
+main .slide .swiper-wrapper .swiper-slide:nth-child(2){
+    background: url(../images/main_page/slide/bg2.jpg) no-repeat center /cover;
+}
+main .slide .swiper-wrapper .swiper-slide:nth-child(3){
+    background: url(../images/main_page/slide/bg1.jpg) no-repeat center /cover;
+}/* 나중에 사진 구하면 수정 */
+main .slide .swiper-wrapper .swiper-slide:nth-child(4){
+    background: url(../images/main_page/slide/bg2.jpg) no-repeat center /cover;
+}/* 나중에 사진 구하면 수정 */
+main .slide .swiper-wrapper .swiper-slide:nth-child(5){
+    background: url(../images/main_page/slide/bg1.jpg) no-repeat center /cover;
+}/* 나중에 사진 구하면 수정 */
+main .slide .swiper-wrapper .swiper-slide .slide_text{
+    width: max-content;
+    position: absolute; bottom: 100px; left: 50%;
+    transform: translateX(-50%);
+}
+main .slide .swiper-wrapper .swiper-slide .slide_text h1{
+    font-family: 'MaruBuri'; font-size: 2.5rem; margin-bottom: 20px; 
+    color: #fff; line-height: 150%;
+}
+main .slide .swiper-wrapper .swiper-slide .slide_text p{
+    font-size: 0.75rem; color: #777;
+    margin-bottom: 30px; line-height: 150%;
+}
+main .slide .swiper-wrapper .swiper-slide .slide_text button{
+    font-size: 0.875rem; padding: 10px 20px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37; font-weight: 500;
+}
