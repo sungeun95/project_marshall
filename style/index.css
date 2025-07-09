@@ -162,5 +162,40 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
 #ns .nsall .ns_top .novice_img{}
 #ns .nsall .ns_bottom .sources_img{}/* 원산지 */
 #ns .nsall .ns_bottom .sources_text{}/* 원산지 */
-
 /* =======================================================4행 초보&원산지 끝 */
+/* =======================================================5행 TV 배너 */
+#tv_b{
+    background-color: #000;
+    width: 100%; height: 500px;
+    position: relative;
+}
+#tv_b *{color: #fff; line-height: 150%; }
+#tv_b .tv_text{
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+}
+#tv_b .tv_text .tv_t {
+    position: absolute;
+    left: 360px; bottom: 100px;
+}
+#tv_b .tv_text .tv_t h2{
+    font-size: 1.875rem;font-family: 'MaruBuri';
+    text-align: left;
+}
+#tv_b .tv_text .tv_t p{
+    text-align: left; color: #777; font-size: 0.875rem;
+    margin: 20px 0;
+}
+#tv_b .tv_text .tv_t button{
+    display: block; font-size: 0.875rem; padding: 10px 15px;
+    color: #D4AF37; border: 1px solid #D4AF37;
+}
+#tv_b .tv_img{
+    background: url(../images/main_page/product/tv_bg.jpg) center/cover;
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+/* =======================================================5행 TV 배너 끝 */
