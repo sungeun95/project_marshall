@@ -99,3 +99,44 @@
 } 
 /* =====================================================서브 페이지 상품 목록 끝 */
 /* ========================================================3행 상품 끝 */
+/* ========================================================7행 고객센터 */
+/* ========================================================7행 고객센터 끝 */
+.cs{width: 100%; height: 700px; padding: 5px 20px 20px 20px; background-color: #000;}
+.cs *{color: #fff;}
+.cs .cs_box{
+    width: 100%; height: 100%;
+    display: flex; 
+}
+.cs .cs_box .cs_container{
+    display: block; background-color: red;
+    position: relative;
+}
+.cs .cs_box .cs_container>span{
+    display: block; height: 100%; width: 100%;
+    position: absolute; left: 0;top: 0;
+}
+.cs .cs_box .cs_container>span:nth-child(1){
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.cs .cs_box .cs_container:hover>span:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.cs .cs_box .cs_container span:nth-child(2){}
+.cs .cs_box .cs_container>span>em{
+    line-height: 660px;
+    font-size: 1.875rem;
+}
+.cs .cs_box .cs_container:hover>span>em{color: #D4AF37;}
+.cs .cs_box .m_box{
+    width: 100%;margin-right: 10px;
+}
+.cs .cs_box .m_box span:last-child{
+    background: url(../images/main_page/korea/marshall.jpg) center/cover;
+}
+.cs .cs_box .cs_box{
+    width: 100%;
+}
+.cs .cs_box .cs_box span:last-child{
+    background: url(../images/main_page/korea/cs.jpg) center/cover;
+}

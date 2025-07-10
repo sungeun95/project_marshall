@@ -30,9 +30,16 @@
         grid-template-rows: 1fr 1fr ;
         gap: 20px;
     }
-    .serve_product .container .box .images{width: 100%;}
+    .serve_product .container>.box{} 
+    .serve_product .container .box .images{max-width: 320px; margin: 0 auto;}
     .serve_product .container .box .images img{width: 100%;}
+    .serve_product .container .box .text{max-width: 320px; margin: 0 auto;}
+    .serve_product .container .box .text p:nth-child(2){margin-bottom: 40px;}
     /* =============================================2행 배너(인덱스 7행) 끝 */
+    /* =============================================7행 고객센터 */
+    .cs{padding: 0px 10px 20px 10px; height: 500px;}
+    .cs .cs_box .cs_container>span>em{line-height: 480px;}
+    /* =============================================7행 고객센터 끝 */
 }
 
 @media screen and (max-width:799px){ /* 모바일 */
@@ -54,10 +61,22 @@
     /* =============================================2행 배너(인덱스 7행) */
     .m_product{padding: 50px 0px;}
     .m_product .m_box_product{margin: 0 auto 0px;}
-    .m_product .m_box_product .kp_title{margin: 0 auto 50px;}
-    .m_product .m_box_product .kp_title h2{font-size: 1.125rem;}
+    .m_product .m_box_product .kp_title{padding: 10px;}
+    .m_product .m_box_product .kp_title h2{font-size: 1.125rem; margin: 0 auto;}
+    .m_product .m_box_product .kp_title a{display: none;}
     .m_product .m_box_product .km_bottom{display: none;}
     .serve_product .container{display: block; padding: 0 10px;}
     .m_product .m_product_s{display: none;}
     /* =============================================2행 배너(인덱스 7행) 끝 */
+        /* =============================================7행 고객센터 */
+    .cs{padding: 0px 10px 20px 10px; width: 100%; height: 500px;}
+    .cs .cs_box{flex-flow: column;}
+    .cs .cs_box .m_box{height: 50%; top: 0; left: 0; margin-right: 0px;}
+    .cs .cs_box .cs_box{height: 50%; bottom: 0; left: 0; margin-top: 10px;}
+    .cs .cs_box .cs_container>span{height: 100%;}
+    .cs .cs_box .cs_container>span>em{
+        line-height: 220px;
+        font-size: 1.375rem;
+    }
+    /* =============================================7행 고객센터 끝 */
 }
