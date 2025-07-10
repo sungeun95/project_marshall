@@ -1,7 +1,15 @@
-html body * {text-transform: uppercase; text-align: center;transition: all 0.5s;}
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+}
+.slide_ss{
+    position: relative;  top: 0; left: 0; width: 100%; height: 100%;}
+html body * {text-transform: uppercase; text-align: center; transition: all 0.5s;}
+/* ==================================================헤더 */
 header{
     width: 100%; height: 85px; 
-    position: relative;
+    position: absolute; top: 0; left: 0;
     background: none;
 }
 header .header_top{
@@ -47,3 +55,155 @@ header .header_bottom .menu_right{}
 header .header_bottom .menu_right>a{margin-right: 10px;}
 header .header_bottom .menu_right>a:last-child{margin-right: 0px;}
 header .header_bottom .menu_right>a img{}
+/* ==================================================헤더 끝 */
+
+/* ==================================================슬라이드 */
+.slide{
+    width: 100%; position: absolute; top: 0; left: 0;
+}
+.slide .swiper-wrapper{width: 100%; height: 860px;}
+.slide .swiper-wrapper .swiper-slide{
+    width: 100%; height: 100%;
+    position: relative; 
+}
+.slide .swiper-wrapper .swiper-slide:nth-child(1){
+    background: url(../images/main_page/slide/bg1.jpg) no-repeat center /cover;
+}
+.slide .swiper-wrapper .swiper-slide:nth-child(2){
+    background: url(../images/main_page/slide/bg2.jpg) no-repeat center /cover;
+}
+.slide .swiper-wrapper .swiper-slide .slide_text{
+    width: max-content;
+    position: absolute; bottom: 100px; left: 50%; width: 100%; 
+    transform: translateX(-50%); overflow-wrap: break-word;
+}
+.slide .swiper-wrapper .swiper-slide .slide_text h2{
+    font-family: 'MaruBuri'; font-size: 2.5rem; margin-bottom: 20px; 
+    color: #fff; line-height: 150%;
+}
+.slide .swiper-wrapper .swiper-slide .slide_text p{
+    font-size: 0.75rem; color: #777;
+    text-transform: capitalize;
+    margin-bottom: 30px; line-height: 150%;
+    padding: 10px; max-width: 420px; min-width: 320px; margin: 0 auto;
+}
+.slide .swiper-wrapper .swiper-slide .slide_text button{
+    font-size: 0.875rem; padding: 10px 20px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37; font-weight: 500;
+}
+/* ==================================================슬라이드 끝 */
+
+
+/* =======================================================푸터 */
+footer{
+    width: 100%; background-color: #101010; padding: 80px 285px;
+}
+footer *{color: #fff; line-height: 150%;}
+footer .footer_top{
+    display: grid; width: 100%;
+    grid-template-columns:150px 80%;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+footer .footer_top dt,footer .footer_top dd{
+    text-align: left; margin-bottom: 8px;
+}
+footer .footer_top dt{}
+footer .footer_top dd{}
+footer .footer_top dd a{margin-right: 10px; font-size: 0.75rem; font-weight: 200;}
+footer .footer_top dd a:last-child{margin-right: 0px;}
+footer .footer_top dd a:hover{color: #D4AF37;}
+footer .footer_bottom{display: flex; justify-content: space-between;}
+footer .footer_bottom a{
+    display: inline-block;
+    font-size: 0.625rem; 
+}
+footer .footer_bottom a:hover{color: #D4AF37; }
+/* =======================================================푸터 끝 */
+/* =======================================================반응형 */
+@media screen and (max-width:1349px){ /* 태블릿 */
+    /* =====================================헤더 */
+    header .header_bottom .h_nav nav>a{margin-right: 10px;}
+    /* =====================================헤더 끝 */
+    /* =====================================슬라이드 */
+    .slide .swiper-wrapper{height: 600px;}
+    .slide .swiper-wrapper .swiper-slide .slide_text h2{
+        font-size: 1.875rem;
+    }
+    .slide .swiper-wrapper .swiper-slide .slide_text p{
+        margin-bottom: 20px;
+    }
+    /* =====================================슬라이드 끝 */    /* =======================================================푸터 */
+    footer{padding: 80px 80px;}
+    footer .footer_top{
+        width: 100%;
+        grid-template-columns:150px 80%;
+    }
+    footer .footer_top dd { font-size: 0.75rem;}
+    footer .footer_top dd a{ display: inline-block; font-size: 0.625rem;}
+    footer .footer_bottom{flex-flow: wrap;justify-content: center; }
+    footer .footer_bottom a{margin: 0 20px 10px 0;}
+    footer .footer_bottom a:last-child{margin-right: 0px;}
+    /* =======================================================푸터 끝 */
+}
+@media screen and (max-width:799px){/* 모바일 */
+     /* =============================================헤더 */
+    header .header_top {padding: 10px 0px;}
+    header .header_bottom{padding: 5px 10px;}
+    header .header_bottom .h_nav nav>a:hover{
+        background-color:#ca8429;
+        color: #fff;
+        font-weight: 500;
+    }
+    header .header_bottom .h_nav nav{
+        background-color: rgba(212,175,55, 0.8);
+        position: absolute; left: 0; top: 35px;
+        width: 160px; 
+        flex-flow: column nowrap;
+        /* 기본 상태에서는 안 보이게 */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+     /* header_bottom 안의 어디든 hover하면 메뉴 열림 */
+    header .header_bottom:hover .h_nav nav{max-height: 300px;}
+    header .header_bottom .h_nav nav>a{text-align: left; padding: 10px; width: 100%; height: 100%;}
+    header .header_bottom>a span{display: none;}
+    header .header_bottom>a:first-child{
+        width: 20px; height: 20px;
+        background: url(../images/main_page/icon/dehaze.png);
+    }
+    header .header_bottom>a:first-child:hover{
+        background: url(../images/main_page/icon/dehaze_g.png);
+    }
+    header .header_bottom>a:first-child:hover~.h_nav>nav{
+        display: block;
+    }
+    header .header_bottom .menu_right>a:first-child{display: none;}
+    /* =====================================슬라이드 */
+    .slide .swiper-wrapper{height: 350px;}
+    .slide .swiper-wrapper .swiper-slide .slide_text{bottom: 20px;}
+    .slide .swiper-wrapper .swiper-slide .slide_text h2{
+        font-size: 1.125rem;
+    }
+    .slide .swiper-wrapper .swiper-slide .slide_text p{
+        font-size: 0.625rem;
+    }
+    .slide .swiper-wrapper .swiper-slide .slide_text button{
+        font-size: 0.625rem;
+    }
+    /* =====================================슬라이드 끝 */
+    /* =======================================================푸터 */
+    footer{padding: 30px 10px;}
+    footer .footer_top{
+        grid-template-columns: none;
+        grid-template-rows: none;
+        margin-bottom: 30px;
+    }
+    footer .footer_top dt{margin-top: 10px; font-size: 0.75rem;}
+    footer .footer_top dd{padding: 0 0px 0 0 ;}
+    footer .footer_bottom{width: 100%;}
+    footer .footer_bottom a{margin: 0 15px 10px 0;}
+    /* =======================================================푸터 끝 */
+}

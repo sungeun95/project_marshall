@@ -1,0 +1,63 @@
+@media screen and (max-width:1349px){ /* 태블릿 */
+    .k_ep{padding: 100px 80px;}
+    .k_ep .ep_categories .k_ep_top{height: 300px;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text{bottom: 40px;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text h2{font-size: 1.375rem;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text p{font-size: 0.875rem;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text button{font-size: 0.875rem;}
+    .k_ep .ep_categories .k_ep_bottom>a{display: none;}
+    /* ===============================상품 4개 묶음 */
+    .k_product .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 50px; 
+    }
+    .k_product .container .box{margin-right: 0px;}
+    .k_product .container .box .images{width: 100%;}
+    /* ===============================상품 4개 묶음 끝 */
+    /* =============================================2행 배너(인덱스 7행) */
+    .m_product{padding: 80px 80px;}
+    .m_product .m_box_product .km_bottom .container{
+        grid-template-rows: 1fr;
+    }
+    .m_product .m_box_product .km_bottom .container .box:nth-child(3), 
+    .m_product .m_box_product .km_bottom .container .box:nth-child(4){display: none;} 
+    /* =====================================================서브 페이지 상품 목록 */
+    .serve_product .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 20px;
+    }
+    .serve_product .container .box .images{width: 100%;}
+    .serve_product .container .box .images img{width: 100%;}
+    /* =============================================2행 배너(인덱스 7행) 끝 */
+}
+
+@media screen and (max-width:799px){ /* 모바일 */
+    .k_ep{padding: 80px 10px;}
+    .k_ep .ep_categories .k_ep_top{height: 250px; margin-bottom: 60px;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text{bottom: 20px;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text h2{font-size: 1.125rem;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text p{font-size: 0.75rem;margin: 10px 0;}
+    .k_ep .ep_categories .k_ep_top .event .ke_text button{font-size: 0.75rem;}
+    /* ===============================상품 4개 묶음 */
+    .k_product .container{display: flex; flex-flow: column nowrap; }
+    .k_product .container .box .images{width: 100%; margin: 0 auto;}
+    .k_product .container .box:nth-child(3),
+    .k_product .container .box:nth-child(4){display: none;}
+    .k_product .container .box span{}
+    .k_product .container .box span del{font-size: 0.625rem;}
+    .k_product .container .box span em{font-size: 0.825rem;}
+    /* ===============================상품 4개 묶음 끝 */
+    /* =============================================2행 배너(인덱스 7행) */
+    .m_product{padding: 50px 0px;}
+    .m_product .m_box_product{margin: 0 auto 0px;}
+    .m_product .m_box_product .kp_title{margin: 0 auto 50px;}
+    .m_product .m_box_product .kp_title h2{font-size: 1.125rem;}
+    .m_product .m_box_product .km_bottom{display: none;}
+    .serve_product .container{display: block; padding: 0 10px;}
+    .m_product .m_product_s{display: none;}
+    /* =============================================2행 배너(인덱스 7행) 끝 */
+}

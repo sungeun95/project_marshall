@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>marshall::Korea</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/header.css"><!-- 헤더,슬라이드,푸터 -->
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/responsive_tablet.css">
-    <link rel="stylesheet" href="./style/responsive_mobile.css">
+    <link rel="stylesheet" href="./style/index_tablet.css">
+    <link rel="stylesheet" href="./style/index_mobile.css">
+    <link rel="stylesheet" href="./style/korea.css">
+    <link rel="stylesheet" href="./style/korea_responsive.css">
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -21,7 +25,7 @@
     <header>
         <div class="header_top">
             <h1><a href="#"><img src="./images/main_page/logo.png" alt="marshall"></a></h1>
-            <select name="language" class="lan"onchange="window.open(value,'_self');">
+            <select name="language" class="lan" onchange="window.open(value,'_self');">
                 <option value="korea.html" selected>대한민국</option>
                 <option value="index.html">English</option>
             </select>
@@ -46,27 +50,255 @@
         </div>
     </header>
     <main>
-        <section class="swiper slide">
-            <!--필수-->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
-                    <div class="slide_text">
-                        <h2>BRING THE BIG<br>STAGE HOME</h2>
-                        <P>역사적인 브랜드 마샬를 집에서 느껴보세요</P>
-                        <button>바로가기</button>
+        <div class="slide_ss">
+            <section class="swiper slide">
+                <!--필수-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="slide_text">
+                            <h2>BRING THE BIG<br>STAGE HOME</h2>
+                            <P>역사적인 브랜드 마샬를 집에서 느껴보세요</P>
+                            <button>바로가기</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="slide_text">
+                            <h2>MARSHALL PRESENTS<br>AN MTV CRIBS SPECIAL</h2>
+                            <P>프로그램을 보다 더 화려하고 웅장하게 제공합니다.<br>우리의 가치를 느껴보세요.</P>
+                            <button>바로신청</button>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide slide2">
-                    <div class="slide_text">
-                        <h2>MARSHALL PRESENTS<br>AN MTV CRIBS SPECIAL</h2>
-                        <P>프로그램을 보다 더 화려하고 웅장하게 제공합니다.<br>우리의 가치를 느껴보세요.</P>
-                        <button>바로신청</button>
+            </section> <!-- slide -->
+        </div>
+        <!-- ========================================================1행 이벤트 -->
+        <section class="k_ep">
+            <div class="ep_categories">
+                <div class="k_ep_top"> <!-- 위 이벤트 --> 
+                    <div class="event">
+                        <div class="ke_text">
+                            <h2>마샬:코리아에서 준비한 특급 이벤트</h2>
+                            <p>깔끔하고 웅장한 소리를 할인 가에 만나 볼 수 있는 기회!</p>
+                            <button type="button">상품 바로가기</button>
+                        </div>
+                    </div>
+                    <p class="event_img"></p><!-- 이미지 -->
+                </div>
+                <div class="k_ep_bottom k_product"> <!-- 아래 상품 -->
+                    <a href="#"><img src="./images/main_page/icon/arrow_left.png" alt=""></a>
+                    <div class="container">
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/main_page/product/product03.jpg" alt=""></p>
+                            <p>JVM410 Head</p>
+                            <p>다용도 100w 스피커</p>
+                            <span><del>3,100,000 원</del><em>3,080,000 원</em></span>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/main_page/korea/product/product1.jpg" alt=""></p>
+                            <p>ACTON III Black</p>
+                            <p>액톤 III 블랙 스피커</p>
+                            <span><del>460,000 원</del><em>380,000 원</em></span>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/main_page/korea/product/product2.jpg" alt=""></p>
+                            <p>STANMORE III Black</p>
+                            <p>스텐모어 III 블랙 스피커</p>
+                            <span><del>640,000 원</del><em>530,000 원</em></span>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/main_page/korea/product/product2.jpg" alt=""></p>
+                            <p>WOBURN III Black</p>
+                            <p>워번  III 블랙 스피커</p>
+                            <span><del>850,000 원</del><em>800,000 원</em></span>
+                        </a>
+                    </div>
+                    <a href="#"><img src="./images/main_page/icon/arrow_right.png" alt="" ></a>
+                </div>
+            </div>
+        </section>
+        <!-- ========================================================1행 이벤트 끝-->
+        <!-- ========================================================2행 배너 -->
+        <a href="#" class="banner">
+            <div class="banner_text">
+                <div class="banner_t">
+                    <h2>ANC와 함께하는 70시간의 플레이, <br>100시간에 도전</h2>
+                    <p>모니터 III A.N.C.의 확정으로 무선 사용 가능, 잡음 제거, 음악을 장시간 유지시켜줍니다.<br>
+                        몇일 동안 이어지는 장시간 플레이를 즐겨보세요.</p>
+                </div>
+            </div>
+            <p class="banner_img"></p> <!-- 배경 -->
+        </a>
+        <!-- ========================================================2행 배너 끝 -->
+        <!-- ========================================================3행 상품 -->
+        <div class="m_product">
+            <div class="m_box_product">
+                <div class="kp_title">
+                    <h2>product</h2>
+                    <a href="#"><img src="./images/main_page/icon/add.png" alt=""></a>
+                </div>
+                <div class="km_top serve_product"> <!-- 베스트 공통 -->
+                    <div class="container">
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers01.jpg" alt=""></p>
+                            <div class="text">
+                                <p>ACTON III CREAM</p>
+                                <p>₩ 460,000</p>
+                            </div>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers02.jpg" alt=""></p>
+                            <div class="text">
+                                <p>ACTON III Brown</p>
+                                <p>₩ 460,000</p>
+                            </div>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers03.jpg" alt=""></p>
+                            <div class="text">
+                                <p>STANMORE III cream</p>
+                                <p>₩ 640,000</p>
+                            </div>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers04.jpg" alt=""></p>
+                            <div class="text">
+                                <p>STANMORE III brown</p>
+                                <p>₩ 640,000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="km_bottom serve_product"> <!-- 베스트 공통2 -->
+                    <div class="container">
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers05.jpg" alt=""></p>
+                            <div class="text">
+                                <p>WOBURN III cream</p>
+                                <p>₩ 950,000</p>
+                            </div>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers06.jpg" alt=""></p>
+                            <div class="text">
+                                <p>WOBURN III brown</p>
+                                <p>₩ 950,000</p>
+                            </div>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers07.jpg" alt=""></p>
+                            <div class="text">
+                                <p>WILLEN II black and brass</p>
+                                <p>₩ 179,000</p>
+                            </div>
+                        </a>
+                        <a href="#" class="box">
+                            <p class="images"><img src="./images/sub_page/speakers/speakers08.jpg" alt=""></p>
+                            <div class="text">
+                                <p>WILLEN II cream</p>
+                                <p>₩ 179,000</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section> <!-- slide -->
-        <!-- =============================================메인 상단 -->
-        
+            <div class="m_product_s">
+                <div class="p_s p_s1">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="p_s p_s2">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="p_s p_s3">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- ========================================================3행 상품 끝 -->
+        <!-- ========================================================4행 TV 배너 -->
+        <div class="tv_b">
+            <div class="tv_text">
+                <div class="tv_t">
+                    <h2>집에서 영화 사운드를 경험할 수 있습니다.</h2>
+                    <p>DISCOVER HESTON 120</p>
+                    <button type="button">상품 바로보기</button>
+                </div>
+            </div>
+            <p class="tv_img"></p><!-- 배경 -->
+        </div>
+        <!-- ========================================================4행 TV 배너끝 -->
+        <!-- ========================================================4행 초보&원산지 -->
+        <section class="ns">
+            <div class="nsall">
+                <div class="ns_a ns_top">
+                    <div class="ns_text novice_text">
+                        <h2>마샬:코리아, 한국에서 만날 떄</h2>
+                        <p>1962년 마샬이 창립되고, 영국에서 많은 사랑을 받아 전통을 가진 회사로 성장 할 수 있었습니다.<br>
+                            그 환의에 힘업어 마샬은 세계적으로 다양한 사운드 제품을 공급하며 오늘날 마샬이 될 수 있었습니다.</p>
+                        <button type="button">한국 매장 안내</button>
+                    </div>
+                    <a href="#" class="ne_img novice_img">
+                        <img src="./images/main_page/tmi/novice.jpg" alt="">
+                    </a>
+                </div><!-- 초보 -->
+                <div class="ns_a ns_bottom">
+                    <a href="#" class="ne_img sources_img">
+                        <img src="./images/main_page/tmi/sources.jpg" alt="">
+                    </a>
+                    <div class="ns_text  sources_text">
+                        <h2>전통성을 가진 영국의 브랜드</h2>
+                        <p>마샬의 첫번째 앰프는 60년도 초에 만들어졌고, 몇 년 후 헤이즈에 첫번째 생산공장을 창업했습니다. 1967년도에 현재의 마샬의 터를 인수하여 공장을 이전하였고, 영국을 시작을 다양한 나라에 고급스러운 사운즈를 공급하게 되어 오늘날 마샬로 이어졌습니다.</p>
+                        <button type="button">정품인증 보러가기</button>
+                    </div>
+                </div><!-- 출처 -->
+            </div>
+        </section>
+        <!-- ========================================================4행 초보&원산지 끝 -->
     </main>
+    <!-- ========================================================푸터 -->
+    <footer>
+        <dl class="footer_top">
+            <dt>Support</dt>
+            <dd>
+                <a href="#">Amps Support</a>
+                <a href="#">Speakers Support</a>
+                <a href="#">Headphones Support</a>
+                <a href="#">Delivery and Tracking</a>
+                <a href="#">Orders and Payments</a>
+                <a href="#">Returns</a>
+                <a href="#">Warranty and Repairs</a>
+                <a href="#">Find a retailer</a>
+                <a href="#">Contact us</a>
+                <a href="#">Support centre</a>
+            </dd>
+            <dt>Company</dt>
+            <dd>
+                <a href="#">About Marshall</a>
+                <a href="#">About Marshall Group</a>
+                <a href="#">Careers</a>
+                <a href="#">Follow us</a>
+            </dd>
+            <dt>My account</dt>
+            <dd>
+                <a href="#">Sign in / Register</a>
+                <a href="#">Register your gear</a>
+            </dd>
+        </dl>
+        <div class="footer_bottom">
+                <a href="#">Terms of purchase</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">GDPR</a>
+                <a href="#">Warranty</a>
+                <a href="#">Cookies</a>
+                <a href="#">Security</a>
+                <a href="#">Commitment to Accessibility</a>
+                <a href="#">Modern Slavery Statements</a>
+                <a href="#">All policies</a>
+        </div>
+    </footer>
+    <!-- ========================================================푸터 끝 -->
 </body>
-</html>l
+</html>

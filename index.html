@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>marshall</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/responsive_tablet.css">
-    <link rel="stylesheet" href="./style/responsive_mobile.css">
+    <link rel="stylesheet" href="./style/index_tablet.css">
+    <link rel="stylesheet" href="./style/index_mobile.css">
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -46,6 +48,7 @@
         </div>
     </header>
     <main>
+        <div class="slide_ss">
         <section class="swiper slide">
             <!--필수-->
             <div class="swiper-wrapper">
@@ -66,8 +69,9 @@
                 </div>
             </div>
         </section> <!-- slide -->
+        </div>
         <!-- ========================================================2행 카테고리, 추천상품 -->
-        <section id="re">
+        <section class="re">
             <div class="re_categories">
                 <div class="categories_top"><!-- 위 카테고리 -->
                     <div class="menu_main">
@@ -130,7 +134,7 @@
         </div>
         <!-- ========================================================3행 카테고리 끝 -->
         <!-- ========================================================4행 초보&원산지 -->
-        <section id="ns">
+        <section class="ns">
             <div class="nsall">
                 <div class="ns_a ns_top">
                     <div class="ns_text novice_text">
@@ -156,7 +160,7 @@
         </section>
         <!-- ========================================================4행 초보&원산지 끝 -->
         <!-- ========================================================5행 TV 배너 -->
-        <div id="tv_b">
+        <div class="tv_b">
             <div class="tv_text">
                 <div class="tv_t">
                     <h2>AMPLIFY YOUR MOVIES & MUSIC</h2>
@@ -168,9 +172,9 @@
         </div>
         <!-- ========================================================5행 TV 배너 끝 -->
         <!-- ========================================================6행 제품 -->
-        <div id="m_product">
+        <div class="m_product">
             <div class="m_box_product">
-                <div class="m_box_top product"><!-- 아래 추천상품(공통적용예정-아이디) -->
+                <div class="m_box_top product"><!-- 아래 추천상품(공통적용) -->
                     <div class="container">
                         <a href="#" class="box">
                             <p class="images"><img src="./images/main_page/product/product01.jpg" alt=""></p>
@@ -244,7 +248,7 @@
         </div>
         <!-- ========================================================6행 제품 끝 -->
         <!-- ========================================================7행 배너 -->
-        <a href="#" id="banner">
+        <a href="#" class="banner">
             <div class="banner_text">
                 <div class="banner_t">
                     <h2>Powering your sound,<br>elevating your performance.</h2>
@@ -255,7 +259,7 @@
         </a>
         <!-- ========================================================7행 배너 끝 -->
         <!-- ========================================================8행 회사소개 -->
-        <section id="company">
+        <section class="company">
             <div class="company_text">
                 <h2>We are Marshall</h2>
                 <p>For over six decades, Marshall’s legacy has grown chord to chord, person to person, generation to generation. It all began in 1962 in Hanwell, London, when Jim and Terry Marshall built their first-ever amp, laying the foundation for a sound that would define rock ’n’ roll. As demand grew, we moved to Bletchley in the late ’60s, where our factory remains to this day. We’ve never stopped amplifying music for artists and fans, continually honing our craft to uphold our reputation for legendary sound and iconic design. Our most iconic amps are still proudly built in Bletchley, UK.<br> <br>
@@ -270,8 +274,9 @@
             </div>
         </section>
         <!-- ========================================================8행 회사소개 끝 -->
-        <!-- ========================================================푸터 -->
-        <footer>
+    </main>
+    <!-- ========================================================푸터 -->
+    <footer>
             <dl class="footer_top">
                 <dt>Support</dt>
                 <dd>
@@ -311,8 +316,7 @@
                 <a href="#">Modern Slavery Statements</a>
                 <a href="#">All policies</a>
             </div>
-        </footer>
-        <!-- ========================================================푸터 끝 -->
-    </main>
+    </footer>
+    <!-- ========================================================푸터 끝 -->
 </body>
 </html>

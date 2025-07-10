@@ -1,0 +1,54 @@
+@media screen and (max-width:1349px){ /* 태블릿 */
+    /* =====================================2행 카테고리, 추천상품 */
+    .re{padding: 80px 80px;}
+    .re .re_categories .categories_top{margin-bottom: 50px;}
+    .re .re_categories .categories_top .menu_main:nth-child(1){margin-right: 10px;}
+    .re .re_categories .recommended_bottom>a{display: none;}
+    /* ===============================상품 4개 묶음 */
+    .product .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 50px;
+    }
+    .product .container .box{margin-right: 0px;}
+    .product .container .box .images{width: 100%;}
+    /* ===============================상품 4개 묶음 끝 */
+    /* =====================================2행 카테고리, 추천상품 끝 */
+    /* =====================================3행 카테고리 */
+    .category{height: 500px;}
+    .category .common_category>span em{
+        font-size: 1.25rem;
+    }
+    /* =====================================3행 카테고리 끝*/
+    /* =====================================4행 초보&원산지*/
+    .ns{padding: 80px 0;}
+    .ns .nsall .ns_a .ns_text h2{font-size: 1.25rem;}
+    /* =====================================4행 초보&원산지 끝*/
+    /* =====================================5행 TV 배너*/
+    .tv_b{height: 350px;}
+    .tv_b .tv_text .tv_t{left: 80px; bottom: 50px;}
+    /* =====================================5행 TV 배너 끝*/
+    /* =====================================6행 제품 */
+    .m_product{padding: 80px 80px;}
+    .m_product .m_box_product .m_box_bottom .container{
+        grid-template-rows: 1fr;
+    }
+    .m_product .m_box_product .m_box_bottom .container .box:nth-child(3),
+    .m_product .m_box_product .m_box_bottom .container .box:nth-child(4){display: none;}
+    /* =====================================6행 제품 끝 */
+    /* =====================================7행 배너 */
+    .banner .banner_text .banner_t{padding: 0 80px;}
+    /* =====================================7행 배너 끝 */
+    /* =======================================================8행 회사소개  */
+    .company{padding: 80px 0 20px 0;}
+    .company .company_text{padding: 0 25px;}
+    .company .company_img{padding: 0 0;}
+    .company .company_img samp{margin-right: 0px;}
+    .company .company_img .c_left{width: 100%; margin-right: 10px;}
+    .company .company_img .c_left img{width: 100%;}
+    .company .company_img .c_center{display: none;}
+    .company .company_img .c_right{width: 100%;}
+    .company .company_img .c_right img{width: 100%;}
+    /* =======================================================8행 회사소개 끝 */
+}
