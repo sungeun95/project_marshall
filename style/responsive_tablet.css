@@ -17,14 +17,14 @@
     #re .re_categories .categories_top .menu_main:nth-child(1){margin-right: 10px;}
     #re .re_categories .recommended_bottom>a{display: none;}
     /* ===============================상품 4개 묶음 */
-    #product .container{
+    .product .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr ;
         gap: 50px;
     }
-    #product .container .box{margin-right: 0px;}
-    #product .container .box .images{width: 100%;}
+    .product .container .box{margin-right: 0px;}
+    .product .container .box .images{width: 100%;}
     /* ===============================상품 4개 묶음 끝 */
     /* =====================================2행 카테고리, 추천상품 끝 */
     /* =====================================3행 카테고리 */
@@ -41,4 +41,35 @@
     #tv_b{height: 350px;}
     #tv_b .tv_text .tv_t{left: 80px; bottom: 50px;}
     /* =====================================5행 TV 배너 끝*/
+    /* =====================================6행 제품 */
+    #m_product{padding: 80px 80px;}
+    #m_product .m_box_product .m_box_bottom .container{ 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #m_product .m_box_product .m_box_bottom .container .box:nth-child(3),
+    #m_product .m_box_product .m_box_bottom .container .box:nth-child(4){display: none;}
+    /* =====================================6행 제품 끝 */
+    /* =====================================7행 배너 */
+    #banner .banner_text .banner_t{padding: 0 80px;}
+    /* =====================================7행 배너 끝 */
+    /* =======================================================8행 회사소개  */
+    #company{padding: 80px 0 20px 0;}
+    #company .company_text{padding: 0 25px;}
+    #company .company_img{padding: 0 0;}
+    #company .company_img samp{margin-right: 0px;}
+    #company .company_img .c_left{width: 100%; margin-right: 10px;}
+    #company .company_img .c_left img{width: 100%;}
+    #company .company_img .c_center{display: none;}
+    #company .company_img .c_right{width: 100%;}
+    #company .company_img .c_right img{width: 100%;}
+    /* =======================================================8행 회사소개 끝 */
+    /* =======================================================푸터 */
+    footer{padding: 80px 80px;}
+    footer .footer_top dd { font-size: 0.75rem; padding: 0 80px 0 0 ;}
+    footer .footer_top dd a{ display: inline-block; font-size: 0.625rem;}
+    footer .footer_bottom{flex-flow: wrap;justify-content: center; }
+    footer .footer_bottom a{margin: 0 20px 10px 0;}
+    footer .footer_bottom a:last-child{margin-right: 0px;}
+    /* =======================================================푸터 끝 */
 }

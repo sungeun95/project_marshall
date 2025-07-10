@@ -57,9 +57,9 @@
     #re .re_categories .categories_top .menu_main p{font-size: 0.625rem;}
     #re .re_categories .categories_top .menu_main>button{margin-bottom: 37px; font-size: 0.625rem;;}
     /* ===============================상품 4개 묶음 */
-    #product .container{display: flex; flex-flow: column nowrap;}
-    #product .container .box:nth-child(3),
-    #product .container .box:nth-child(4){display: none;}
+    .product .container{display: flex; flex-flow: column nowrap; }
+    .product .container .box:nth-child(3),
+    .product .container .box:nth-child(4){display: none;}
     /* ===============================상품 4개 묶음 끝 */
     /* =====================================2행 카테고리, 추천상품 끝 */
     /* =====================================3행 카테고리 */
@@ -94,4 +94,30 @@
     #tv_b .tv_text .tv_t p{font-size: 0.625rem;text-align: center;}
     #tv_b .tv_text .tv_t button{font-size: 0.625rem; margin: 0 auto;}
     /* =====================================5행 TV 배너 끝*/
+    /* =====================================6행 제품*/
+    #m_product{padding: 50px 10px;}
+    #m_product .m_product_s{display: none;}
+    /* =====================================6행 제품 끝*/
+    /* =====================================7행 배너 */
+    #banner{height: 200px;}
+    #banner .banner_text .banner_t{padding: 0 20px;}
+    #banner .banner_text .banner_t h2{font-size: 1.125rem;}
+    #banner .banner_text .banner_t p{font-size: 0.625rem;}
+    /* =====================================7행 배너 끝 */
+    /* =====================================8행 회사소개 */
+    #company .company_text h2{font-size: 1.125rem;}
+    #company .company_text p{font-size: 0.625rem;margin-bottom: 50px;}
+    /* =====================================8행 회사소개 끝 */
+    /* =======================================================푸터 */
+    footer{padding: 30px 1%;}
+    footer .footer_top{
+        grid-template-columns: none;
+        grid-template-rows: none;
+        margin-bottom: 30px;
+    }
+    footer .footer_top dt{margin-top: 10px; font-size: 0.75rem;}
+    footer .footer_top dd{padding: 0 0px 0 0 ;}
+    footer .footer_bottom{width: 100%;}
+    footer .footer_bottom a{margin: 0 15px 10px 0;}
+    /* =======================================================푸터 끝 */
 }

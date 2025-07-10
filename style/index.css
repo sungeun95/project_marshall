@@ -31,6 +31,7 @@ main .slide .swiper-wrapper .swiper-slide .slide_text h2{
 }
 main .slide .swiper-wrapper .swiper-slide .slide_text p{
     font-size: 0.75rem; color: #777;
+    text-transform: capitalize;
     margin-bottom: 30px; line-height: 150%;
     padding: 10px; max-width: 420px; min-width: 320px; margin: 0 auto;
 }
@@ -70,17 +71,18 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
 }/* 화살표 */
 #re .re_categories .recommended_bottom>a img{width: 100%;}
 /* ===============================상품 4개 묶음 */
-#product{width: 100%;}
-#product .container{
+.product{width: 100%;}
+.product *{line-height: 150%;}
+.product .container{
     max-width: 1350px; min-width: 300px; 
     margin: 0 auto; display: flex;
 }
-#product .container .box{margin-right: 50px;}
-#product .container .box:last-child{margin-right: 0px;}
-#product .container .box .images{width: 300px;}
-#product .container .box .images img{width: 100%;}
-#product .container .box p:nth-child(2){margin: 10px 0;font-weight: 800;}
-#product .container .box p:nth-child(3){font-size: 0.875rem;color: #777;}
+.product .container .box{margin-right: 50px;}
+.product .container .box:last-child{margin-right: 0px;}
+.product .container .box .images{width: 300px;}
+.product .container .box .images img{width: 100%;}
+.product .container .box p:nth-child(2){margin: 10px 0;font-weight: 800;}
+.product .container .box p:nth-child(3){font-size: 0.875rem;color: #777; font-weight: 200;}
 /* ===============================상품 4개 묶음 끝 */
 /* =======================================================2행 카테고리, 추천상품 끝 */
 /* =======================================================3행 카테고리 */
@@ -149,6 +151,7 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
 #ns .nsall .ns_a .ns_text p{
     margin: 40px 0;
     font-size: 0.875rem; color: #777;
+    text-transform: capitalize;
 }
 #ns .nsall .ns_a .ns_text button{
     padding: 15px 30px; font-size: 0.875rem;
@@ -165,7 +168,6 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
 /* =======================================================4행 초보&원산지 끝 */
 /* =======================================================5행 TV 배너 */
 #tv_b{
-    background-color: #000;
     width: 100%; height: 500px;
     position: relative;
 }
@@ -175,6 +177,7 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
     position: absolute;
     top: 0; left: 0;
     z-index: 10;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 #tv_b .tv_text .tv_t {
     position: absolute;
@@ -186,7 +189,7 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
 }
 #tv_b .tv_text .tv_t p{
     text-align: left; color: #777; font-size: 0.875rem;
-    margin: 20px 0;
+    margin: 20px 0; text-transform: capitalize;
 }
 #tv_b .tv_text .tv_t button{
     display: block; font-size: 0.875rem; padding: 10px 15px;
@@ -199,3 +202,110 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
     top: 0; left: 0;
 }
 /* =======================================================5행 TV 배너 끝 */
+/* =======================================================6행 제품 */
+#m_product{
+    width: 100%; background-color: #000;
+    padding: 200px 0;
+}
+#m_product *{color: #fff;}
+#m_product .m_box_product{}
+#m_product .m_box_product .m_box_top{margin-bottom: 60px;}
+#m_product .m_box_product .m_box_bottom{margin-bottom: 50px;}
+#m_product .m_product_s{
+    max-width: 1350px; min-width: 320px; height: 15px;
+    margin: 0 auto; display: flex;
+}
+#m_product .m_product_s .p_s{width: 100%;}
+#m_product .m_product_s .p_s>span{display: block;}
+#m_product .m_product_s .p_s span:nth-child(1){
+    width: 100%; height: 1px; background-color: #fff;
+    margin-bottom: 10px;
+}
+#m_product .m_product_s .p_s:hover span:nth-child(1){background-color: #D4AF37;}
+#m_product .m_product_s .p_s span:nth-child(2){
+    width: 5px; height: 5px; border-radius: 5px; background-color: #D4AF37;
+    margin: 0 auto; opacity: 0;
+}
+#m_product .m_product_s .p_s:hover span:nth-child(2){opacity: 1;}
+#m_product .m_product_s .p_s1{}
+#m_product .m_product_s .p_s2{}/* 계속 활성화 상태 */
+#m_product .m_product_s .p_s2 span:nth-child(1){background-color: #D4AF37;}
+#m_product .m_product_s .p_s2 span:nth-child(2){opacity: 1;}
+#m_product .m_product_s .p_s3{}
+#m_product .m_product_s .p_s4{}
+#m_product .m_product_s .p_s5{}
+/* =======================================================6행 제품 끝 */
+/* =======================================================7행 배너 */
+#banner{
+    width: 100%; height: 300px;
+    position: relative;
+    display: block;
+}
+#banner *{color: #fff; line-height: 150%; }
+#banner .banner_text{
+    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);
+    position: absolute; top: 0; left: 0; z-index: 10;
+    display: grid; align-items: center;
+}
+#banner .banner_text .banner_t{}
+#banner .banner_text .banner_t h2{
+    font-size: 1.875rem;font-family: 'MaruBuri';
+}
+#banner .banner_text .banner_t p{
+    color: #777; font-size: 0.875rem; margin: 20px 0;text-transform: capitalize;
+}
+#banner .banner_img{
+    width: 100%; height: 100%; background-color: yellow;
+    position: absolute; top: 0; left: 0;
+    background: url(../images/main_page/banner.jpg) center/cover;
+}
+/* =======================================================7행 배너 끝 */
+/* =======================================================8행 회사소개  */
+#company{width: 100%; background-color: #000; padding: 230px 0 20px 0;}
+#company * {color: #fff; line-height: 150%;}
+#company .company_text{
+    max-width: 1100px; min-width: 320px;
+    margin: 0 auto; 
+}
+#company .company_text h2{
+    font-size: 2.5rem; font-weight: 800; margin-bottom: 30px;
+}
+#company .company_text p{
+    color: #777;text-transform: capitalize; margin-bottom: 100px;
+}
+#company .company_img{
+    width: 100%;
+    display: flex; padding: 0 20px;
+    justify-content: space-between; align-items: end;
+}
+#company .company_img samp{display: block; margin-right: 10px;}
+#company .company_img samp:last-child{margin-right: 0px;}
+#company .company_img .c_left{}
+#company .company_img .c_center{}
+#company .company_img .c_right{}
+#company .company_img samp img{width: 100%;}
+/* =======================================================8행 회사소개 끝 */
+/* =======================================================푸터 */
+footer{width: 100%; background-color: #101010; padding: 80px 285px;}
+footer *{color: #fff; line-height: 150%;}
+footer .footer_top{
+    display: grid;
+    grid-template-columns:150px 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+footer .footer_top dt,footer .footer_top dd{
+    text-align: left; margin-bottom: 8px;
+}
+footer .footer_top dt{}
+footer .footer_top dd{}
+footer .footer_top dd a{margin-right: 10px; font-size: 0.75rem; font-weight: 200;}
+footer .footer_top dd a:last-child{margin-right: 0px;}
+footer .footer_top dd a:hover{color: #D4AF37;}
+footer .footer_bottom{display: flex; justify-content: space-between;}
+footer .footer_bottom a{
+    display: inline-block;
+    font-size: 0.625rem; 
+}
+footer .footer_bottom a:hover{color: #D4AF37; }
+/* =======================================================푸터 끝 */
