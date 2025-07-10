@@ -278,11 +278,14 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
     display: flex; padding: 0 20px;
     justify-content: space-between; align-items: end;
 }
-#company .company_img samp{display: block; margin-right: 10px;}
+#company .company_img samp{display: block;}
 #company .company_img samp:last-child{margin-right: 0px;}
-#company .company_img .c_left{}
-#company .company_img .c_center{}
-#company .company_img .c_right{}
+#company .company_img .c_left{max-width: 390px; margin-right: 10px;}
+#company .company_img .c_left img{max-width: 100%;}
+#company .company_img .c_center{max-width: 1020px; min-width: 320px; margin-right: 10px;}
+#company .company_img .c_center img{width: 100%;}
+#company .company_img .c_right{max-width: 430px;}
+#company .company_img .c_right img{width: 100%;}
 #company .company_img samp img{width: 100%;}
 /* =======================================================8행 회사소개 끝 */
 /* =======================================================푸터 */
