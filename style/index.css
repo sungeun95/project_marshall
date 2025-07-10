@@ -280,11 +280,11 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
 }
 #company .company_img samp{display: block;}
 #company .company_img samp:last-child{margin-right: 0px;}
-#company .company_img .c_left{max-width: 390px; margin-right: 10px;}
+#company .company_img .c_left{margin-right: 10px;}
 #company .company_img .c_left img{max-width: 100%;}
 #company .company_img .c_center{max-width: 1020px; min-width: 320px; margin-right: 10px;}
 #company .company_img .c_center img{width: 100%;}
-#company .company_img .c_right{max-width: 430px;}
+#company .company_img .c_right{}
 #company .company_img .c_right img{width: 100%;}
 #company .company_img samp img{width: 100%;}
 /* =======================================================8행 회사소개 끝 */
@@ -292,8 +292,8 @@ main .slide .swiper-wrapper .swiper-slide .slide_text button{
 footer{width: 100%; background-color: #101010; padding: 80px 285px;}
 footer *{color: #fff; line-height: 150%;}
 footer .footer_top{
-    display: grid;
-    grid-template-columns:150px 100%;
+    display: grid; width: 100%;
+    grid-template-columns:150px 80%;
     grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: 20px;
 }

@@ -1,4 +1,4 @@
-@media screen and (max-width:1399px){ /* 태블릿 */
+@media screen and (max-width:1349px){ /* 태블릿 */
     /* =====================================헤더 */
     header .header_bottom .h_nav nav>a{margin-right: 10px;}
     /* =====================================헤더 끝 */
@@ -43,8 +43,7 @@
     /* =====================================5행 TV 배너 끝*/
     /* =====================================6행 제품 */
     #m_product{padding: 80px 80px;}
-    #m_product .m_box_product .m_box_bottom .container{ 
-        grid-template-columns: 1fr 1fr;
+    #m_product .m_box_product .m_box_bottom .container{
         grid-template-rows: 1fr;
     }
     #m_product .m_box_product .m_box_bottom .container .box:nth-child(3),
@@ -66,7 +65,11 @@
     /* =======================================================8행 회사소개 끝 */
     /* =======================================================푸터 */
     footer{padding: 80px 80px;}
-    footer .footer_top dd { font-size: 0.75rem; padding: 0 80px 0 0 ;}
+    footer .footer_top{
+        width: 100%;
+        grid-template-columns:150px 80%;
+    }
+    footer .footer_top dd { font-size: 0.75rem;}
     footer .footer_top dd a{ display: inline-block; font-size: 0.625rem;}
     footer .footer_bottom{flex-flow: wrap;justify-content: center; }
     footer .footer_bottom a{margin: 0 20px 10px 0;}

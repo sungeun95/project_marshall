@@ -1,5 +1,6 @@
 @media screen and (max-width:799px){ /* 모바일 */
     /* =============================================헤더 */
+    header .header_top {padding: 10px 0px;}
     header .header_bottom{padding: 5px 10px;}
     header .header_bottom .h_nav nav>a:hover{
         background-color:#ca8429;
@@ -97,6 +98,10 @@
     /* =====================================6행 제품*/
     #m_product{padding: 50px 10px;}
     #m_product .m_product_s{display: none;}
+    #m_product .m_box_product .m_box_top .container,
+    #m_product .m_box_product .m_box_bottom .container{
+        width: 300px;
+    }
     /* =====================================6행 제품 끝*/
     /* =====================================7행 배너 */
     #banner{height: 200px;}
@@ -109,7 +114,7 @@
     #company .company_text p{font-size: 0.625rem;margin-bottom: 50px;}
     /* =====================================8행 회사소개 끝 */
     /* =======================================================푸터 */
-    footer{padding: 30px 1%;}
+    footer{padding: 30px 10px;}
     footer .footer_top{
         grid-template-columns: none;
         grid-template-rows: none;
