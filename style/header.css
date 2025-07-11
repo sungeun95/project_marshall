@@ -78,19 +78,18 @@ header .header_bottom .menu_right>a img{}
     transform: translateX(-50%); overflow-wrap: break-word;
 }
 .slide .swiper-wrapper .swiper-slide .slide_text h2{
-    font-family: 'MaruBuri'; font-size: 2.5rem; margin-bottom: 20px; 
+    font-family: 'MaruBuri'; font-size: 2.5rem;
     color: #fff; line-height: 150%;
 }
 .slide .swiper-wrapper .swiper-slide .slide_text p{
     font-size: 0.75rem; color: #777;
-    text-transform: capitalize;
-    margin-bottom: 30px; line-height: 150%;
+    text-transform: capitalize; line-height: 150%;
     padding: 10px; max-width: 420px; min-width: 320px; margin: 0 auto;
 }
 .slide .swiper-wrapper .swiper-slide .slide_text button{
     font-size: 0.875rem; padding: 10px 20px;
     border: 1px solid #D4AF37;
-    color: #D4AF37; font-weight: 500;
+    color: #D4AF37; font-weight: 500; margin-top: 30px;
 }
 /* ==================================================슬라이드 끝 */
 

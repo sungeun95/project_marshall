@@ -4,3 +4,10 @@ const swiper = new Swiper('.slide',{
     loop:true,
     direction:'horizontal', //아래에서 위로 올라오게 horizontal, vertical
 })
+
+/* const aAll = document.querySelectorAll('a');
+for(let i of aAll){
+    i.addEventListener('click',function(e){
+        e.preventDefault();
+    })
+} */

@@ -1,0 +1,119 @@
+
+.sub_speakers{width: 100%; height: 100vh;}
+.sub_speakers .bg_snb_text{width: 100%; height: 100%;position: relative;}
+.sub_speakers .bg_snb_text h2{
+    position: absolute; left: 50%; bottom: 130px;
+    transform: translateX(-50%); color: #fff;
+    margin: 0 auto;
+    font-size: 3.125rem; font-family: 'MaruBuri'; z-index: 20;
+}
+.sub_speakers .bg_snb_text P{
+    width: 100%; height: 100%;
+    background: url(../images/sub_page/main_img.jpg) center/cover;
+}
+.sub_speakers .bg_snb_text P img{}
+
+/* ==================================================2행 */
+.new_product{width: 100%; background-color: #000;padding: 150px 0;}
+.new_product *{color: #fff;}
+.new_product h2{
+    font-size: 1.875rem; font-family: 'MaruBuri'; color: #D4AF37;
+    margin-bottom: 50px;
+}
+/* 상품 3개 */
+.snp_container{
+    max-width: 1350px; min-width: 320px;
+    margin: 0 auto; display: flex; justify-content: end;
+}
+.snp_container .snp_box{
+    margin-right: 15px;
+}
+.snp_container .snp_box:last-child{margin-right: 0px;}
+.snp_container .snp_box .snp_img{width: 100%; margin-bottom: 15px;}
+.snp_container .snp_box .snp_img img{width: 100%;}
+.snp_container .snp_box .snp_text{}
+.snp_container .snp_box .snp_text .snp_text_top{
+    display: flex; justify-content: space-between;
+    align-items: center; margin-bottom: 8px;
+}
+.snp_container .snp_box .snp_text .snp_text_top h3{font-weight: 600;}
+.snp_container .snp_box .snp_text .snp_text_top>p{
+    color: #D4AF37; font-size: 0.875rem;
+}
+.snp_container .snp_box .snp_text .snp_text_top>p del{
+    font-size: 0.75rem; margin-right: 10px;
+}
+.snp_container .snp_box .snp_text>p{
+    width: 100%;
+    text-align: left; font-size: 0.875rem; font-weight: 300;
+}
+/* ==================================================2행 끝 */
+/* ==================================================3행 배너 */
+.sub_banner{
+    width: 100%; height: 500px;
+    position: relative;
+}
+.sub_banner .sub_banner_text{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0; z-index: 10;
+}
+.sub_banner .sub_banner_text .sub_banner_t{
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.sub_banner .sub_banner_text .sub_banner_t h2{
+    font-size: 1.875rem; color: #fff; font-family: 'MaruBuri';
+}
+.sub_banner .sub_banner_text .sub_banner_t p{
+    margin: 20px 0; font-size: 0.875rem; color: #777;
+}
+.sub_banner .sub_banner_text .sub_banner_t button{
+    padding: 10px 15px; border: 1px solid #D4AF37; color: #D4AF37;
+}
+.sub_banner .sub_banner_img{
+    background: url(../images/sub_page/limit.jpg) center/cover;
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+}
+/* ==================================================3행 배너 끝 */
+/* ==================================================4행 */
+.special_offer{width: 100%; background-color: #000;padding: 150px 0;}
+.special_offer *{color: #fff;}
+.special_offer h2{
+    font-size: 1.875rem; font-family: 'MaruBuri'; color: #D4AF37;
+    margin-bottom: 50px;
+}
+/* ==================================================4행 끝 */
+/* ==================================================5행 배너 */
+.sub_banner2{
+    width: 100%; height: 500px;
+    position: relative;
+}
+.sub_banner2 .sub_banner2_text{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0; z-index: 10;
+}
+.sub_banner2 .sub_banner2_text .sub_banner2_t{
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.sub_banner2 .sub_banner2_text .sub_banner2_t h2{
+    font-size: 1.875rem; color: #fff; font-family: 'MaruBuri';
+}
+.sub_banner2 .sub_banner2_text .sub_banner2_t p{
+    margin: 20px 0; font-size: 0.875rem; color: #777;
+}
+.sub_banner2 .sub_banner2_text .sub_banner2_t button{
+    padding: 10px 15px; border: 1px solid #D4AF37; color: #D4AF37;
+}
+.sub_banner2 .sub_banner2_img{
+    background: url(../images/sub_page/banner.jpg) center/cover;
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+}
+/* ==================================================5행 배너 끝 */
+/* ==================================================6행 */
+.sub_p .sub_c .sub_t h2{margin: 0 auto;}
+/* ==================================================6행 끝 */
