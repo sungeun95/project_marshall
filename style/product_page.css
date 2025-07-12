@@ -416,9 +416,9 @@
 
 
 /* ======================================= 움직이는 메뉴 */
-#product_moving{ display: none;
+#product_moving{
     width: 100%;background-color: #000; border-top: 1px solid #fff;
-    /* position: sticky; left: 0; bottom: 0; z-index: 20; */
+    position: sticky; left: 0; bottom: 0; z-index: 20;
 }
 #product_moving *{color: #fff; text-align: left;}
 #product_moving .moving{
