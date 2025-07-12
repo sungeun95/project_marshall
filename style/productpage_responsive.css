@@ -19,7 +19,6 @@
     #product .container .product_text{width: 100%;}
     #product .container .product_img .product_thumbnail>a:nth-child(1),
     #product .container .product_img .product_thumbnail>a:last-child{display: none;}
-    
     #product .container .product_text{padding: 40px 0; }
     #product .container .product_text .restrict{margin-bottom: 10px;}
     #product .container .product_text .title{margin-bottom: 10px;}
@@ -28,6 +27,47 @@
     #product .container .product_text .price{margin-bottom: 10px;}
     #product .container .product_text .but_box{margin-bottom: 10px;}
     #product .container .product_text .announcement{margin-bottom: 10px;}
+    /* ==================================2행 */
+    .product_bn{height: 300px;}
+    .product_bn .text p{line-height: 300px;}
+    /* ==================================2행 끝 */
+    /* ==================================3행  */
+    .description{padding: 100px 80px;}
+    .description .container{height: 1000px;}
+    .description .container .text{width: 450px;}
+    .description .container .text p{font-size: 0.875rem;}
+    .description .container .text button{font-size: 0.75rem;}
+    /* ====================== */
+    .description .container .img>p{width: 145px; height: 450px;}
+    .description .container .img>p:nth-child(1){margin-top: 550px;}
+    .description .container .img>p:nth-child(2){margin-top: 350px;}
+    .description .container .img>p:nth-child(3){margin-top: 200px;}
+    /* ==================================3행 끝 */
+    /* ==================================4행 */
+    .product_bn2{height: 300px;}
+    /* ==================================4행 끝 */
+    /* ==================================5행  */
+    .description2{padding: 80px;}
+    .description2 .container .p_box{height: 227.33px;}
+    .description2 .container .p2_top .img{margin-right: 30px;}
+    .description2 .container .p2_bottom .img{margin-left: 30px;}
+    .description2 .container .p_box .text p{font-size: 0.875rem;}
+    .description2 .container .text{margin: 80px 0;}
+    /* ==================================5행 끝 */
+    /* ==================================6행 */
+    .product_bn3{height: 300px;}
+    /* ==================================6행 끝 */
+    /* ==================================7행 */
+    .performance{padding: 80px;}
+    .performance .container .performance_top{margin-bottom: 50px;}
+    .performance .container .performance_bottom .title button{font-size: 0.75rem;}
+    .performance .container .performance_bottom *{font-size: 0.75rem;}
+    /* ==================================7행 끝 */
+    /* ==================================8행  */
+    .review_menu .rai_menu a{ font-size: 1.125rem;}
+    /* -------- */
+    .review{padding: 80px;}
+    /* ==================================8행 끝 */
 }
 
 @media screen and (max-width:799px){ /* 모바일 */
@@ -47,5 +87,74 @@
     #product .container .product_text .announcement .announcement_box .tmi>p{padding: 10px;}
     #product .container .product_text .announcement .bank .bank_box .img{display:none;}
     #product .container .product_text .movemenu_btn>a{font-size: 0.625rem;}
-
+    /* =============================== 움직이는 메뉴*/
+    #product_moving {top: calc(100% - 170px);}
+    #product_moving .moving{flex-flow: column nowrap; padding: 10px;}
+    #product_moving .moving .product_name{margin-bottom: 10px;width: 100%;}
+    #product_moving .moving .product_name .moving_img{width: 80px; height: 100%;}
+    #product_moving .moving .product_name .moving_text h2{font-size: 0.75rem; margin-bottom: 5px;}
+    #product_moving .moving .product_name .moving_text>p{font-size: 0.625rem; margin-bottom: 5px;line-height: 150%;}
+    #product_moving .moving .product_btn{width: 100%;}
+    #product_moving .moving .product_btn button{padding: 10px 0;}
+    /* ==================================2행 */
+    .product_bn{height: 150px;}
+    .product_bn .text p{line-height: 150px; font-size: 1.125rem;}
+    /* ==================================2행 끝 */
+    /* ==================================3행 */
+    .description{padding: 10px;}
+    .description .container{width: 100%; height: 100%;}
+    .description .container .ny_m_box{position: static;}
+    .description .container .room_box{position: static;}
+    .description .container .text{width: 100%;}
+    .description .container .text h2{font-size: 1.125rem;}
+    .description .container .text p{font-size: 0.625rem;}
+    .description .container .text button{font-size: 0.625rem;}
+    /* ====================== */
+    .description .container .img{position: static; width: 100%; height: 600px;}
+    .description .container .img>p{height: 400px;margin-right: 10px;}
+    .description .container .img>p:last-child{margin-right: 0px;}
+    .description .container .img>p:nth-child(1){margin-top: 200px;}
+    .description .container .img>p:nth-child(2){margin-top: 125px;}
+    .description .container .img>p:nth-child(3){margin-top: 75px;}
+    /* ==================================3행 끝 */
+    /* ==================================4행 */
+    .product_bn2{height: 200px;}
+    /* ==================================4행 끝 */
+    /* ==================================5행  */
+    .description2{padding: 10px; height: 100%;}
+    .description2 .container .p_box{
+        width: 100%; height: 100%; display: block;
+    }
+    .description2 .container .p_box .img{height: 235px; }
+    .description2 .container .p_box .img{margin-right: 0px;}
+    .description2 .container .p2_bottom .img{margin-left: 0px;}
+    .description2 .container .p_box .text h3{font-size: 1.125rem;}
+    .description2 .container .p_box .text p{font-size: 0.625rem;}
+    .description2 .container .text{margin: 20px 0;}
+    .description2 .container>.text{margin: 50px 0;}
+    .description2 .container .text h3{font-size: 1.125rem;}
+    .description2 .container .text p{font-size: 0.625rem;}
+    /* ==================================5행 끝 */
+    /* ==================================6행 */
+    .product_bn3{height: 200px; padding: 10px;}
+    .product_bn3 .bn3_box .bn3_text h2{font-size: 1.125rem;}
+    .product_bn3 .bn3_box .bn3_text p{font-size: 0.625rem;}
+    /* ==================================6행 끝 */
+    /* ==================================7행 */
+    .performance{padding: 10px;}
+    .performance .container .performance_box>h2{font-size: 1.125rem;}
+    .performance .container .performance_box>p{font-size: 0.75rem;}
+    .performance .container .performance_top{margin-bottom: 30px;}
+    .performance .container .performance_bottom .title{flex-flow: column nowrap;}
+    .performance .container .performance_bottom .title h2{font-size: 1.125rem;margin-bottom: 20px;}
+    .performance .container .performance_bottom .title button{
+        width: 125px; padding: 10px 0; text-align: center;
+    }
+    .performance .container .performance_bottom *{font-size: 0.75rem;}
+    /* ==================================7행 끝 */
+    /* ==================================8행  */
+    .review_menu .rai_menu a{ font-size: 0.875rem;}
+    /* -------- */
+    .review{display: none;}
+    /* ==================================8행 끝 */
 }

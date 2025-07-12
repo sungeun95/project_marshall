@@ -1,4 +1,7 @@
-#product{width: 100%; background-color: #000; padding: 130px 150px 50px;}
+/* ======================================= 1행 상품 */
+#product{
+    width: 100%; background-color: #000; padding: 130px 150px 50px;
+}
 #product *{color: #fff;text-align: left;}
 #product .container{display: flex; height: 750px;}
 /* 왼쪽 이미지 */
@@ -46,19 +49,21 @@
     font-size: 0.75rem;
 }
 #product .container .product_text .detail>span img{}
-#product .container .product_text .colon_review{
+#product .container .product_text .color_review{
     display: flex; justify-content: space-between; margin-bottom: 35px;
-    padding: 15px 0;
+    padding: 15px 0; 
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
 } /* 색상,리뷰 묶음 */
-#product .container .product_text .colon_review .colon{display: flex; align-items: center;} 
-#product .container .product_text .colon_review .colon>p{margin-right: 10px;font-size: 0.75rem; font-weight: 500;} 
-#product .container .product_text .colon_review .colon>p:nth-child(2){font-size: 0.75rem; color: #777;} 
-#product .container .product_text .colon_review .review{display: flex; align-items: center;} 
-#product .container .product_text .colon_review .review>span{ display: block; font-size: 0.75rem;} 
-#product .container .product_text .colon_review .review>span:nth-child(1){
+#product .container .product_text .color_review .color{display: flex; align-items: center;} 
+#product .container .product_text .color_review .color>p{margin-right: 10px;font-size: 0.75rem; font-weight: 500;} 
+#product .container .product_text .color_review .color>p:nth-child(2){font-size: 0.75rem; color: #777;} 
+#product .container .product_text .color_review .review{display: flex; align-items: center;} 
+#product .container .product_text .color_review .review>span{ display: block; font-size: 0.75rem;} 
+#product .container .product_text .color_review .review>span:nth-child(1){
     width: 15px; height: 15px; margin-right: 10px;
 } 
-#product .container .product_text .colon_review .review>span:nth-child(1) img{width: 100%;} 
+#product .container .product_text .color_review .review>span:nth-child(1) img{width: 100%;} 
 #product .container .product_text .price{ margin-bottom: 35px;
     font-size: 1.375rem; font-family: 'MaruBuri'; color: #D4AF37;
 } /* 가격 */ 
@@ -146,4 +151,319 @@
     padding: 10px 0 ; text-align: center; font-size: 0.875rem;
 }
 #product .container .product_text .movemenu_btn>a:last-child{margin-right: 0;}
+/* ======================================= 1행 상품 끝 */
+/* ======================================= 2행 상품 배너 */
+.product_bn{
+    width: 100%; height: 400px;
+    position: relative;
+}
+.product_bn .text{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; z-index: 10;
+    background: url(../images/sub_page/limit.jpg) center/cover;
+}
+.product_bn .text p{
+    line-height: 400px; font-family: 'MaruBuri';
+    color: #D4AF37; font-size: 1.875rem;
+}
+.product_bn p{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* ======================================= 2행 상품 배너 끝*/
+/* ======================================= 3행 상품 설명*/
+.description{width: 100%; background-color: #000; padding: 150px 0;}
+.description *{color: #fff;line-height: 150%;}
+.description .container{
+    max-width: 1350px; min-width: 300px;
+    height: 1250px;
+    margin: 0 auto;
+    position: relative; 
+}
+.description .container .text{
+    max-width: 930px; min-width: 300px;
+    overflow: hidden;
+}/* 공통 */
+.description .container .text h2{
+    font-size: 1.875rem; font-family: 'MaruBuri';
+}
+.description .container .text p{
+    color: #777; margin: 30px 0; text-transform:capitalize;
+}
+.description .container .text button{
+    color: #D4AF37; padding: 10px 20px;
+    border: 1px solid #D4AF37;
+}
+/* ========================================== */
+.description .container .ny_m_box{
+    position: absolute; left: 0;top: 0;
+}
+.description .container .ny_m_box *{text-align: left;}
+.description .container .ny_m_box h2{}
+.description .container .ny_m_box button{
+    float: left;
+}
+.description .container .room_box{
+    position: absolute; right: 0; bottom: 0;
+}
+.description .container .room_box *{text-align: right;}
+.description .container .room_box h2{}
+.description .container .room_box button{
+    float: right;
+}
+/* ========================================== */
+.description .container .img{
+    display: flex; width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    justify-content: space-between;
+}
+.description .container .img>p{
+    width: 322.5px; height: 600px;
+}
+.description .container .img>p:nth-child(1){
+    background: url(../images/product_page/description/01_description1.jpg) center/cover;
+    margin-top: 650px;
+}
+.description .container .img>p:nth-child(2){
+    background: url(../images/product_page/description/01_description2.jpg) center/cover;
+    margin-top: 430px;
+}
+.description .container .img>p:nth-child(3){
+    background: url(../images/product_page/description/01_description3.jpg) center/cover;
+    margin-top: 220px;
+}
+.description .container .img>p:nth-child(4){
+    background: url(../images/product_page/description/01_description4.jpg) center/cover;
+}
+/* ======================================= 3행 상품 설명 끝*/
+/* ======================================= 4행 배너 */
+.product_bn2{width: 100%; height: 400px; position: relative; background-color: red;}
+.product_bn2 p{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.product_bn2 p:first-child{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.product_bn2 p:last-child{
+    background: url(../images/product_page/description/02_description_banner.jpg) center/cover;
+}
+/* ======================================= 4행 베너 끝*/
+/* ======================================= 5행 상품 설명2*/
+
+.description2{width: 100%; background-color: #000; padding: 150px 200px;}
+.description2 *{color: #fff; line-height: 150%;}
+.description2 .container{max-width: 1350px; min-width: 300px; height: 100%;}
+.description2 .container .p_box{
+    display: flex; width: 100%; height: 550px; justify-content: space-between;
+    align-items: center;
+}
+.description2 .container .p_box .img{
+    width: 100%; height: 100%;
+    position: relative; 
+}
+.description2 .container .p_box .img>span{
+    position: absolute; left: 0;top: 0;
+    width: 100%; height: 100%;
+}
+.description2 .container .p_box .img>span:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.3);  z-index: 2;
+}
+.description2 .container .p_box .img>span:nth-child(2){}
+.description2 .container .p_box .img>span img{width: 100%;}
+.description2 .container .p_box .text{width: 100%;}
+.description2 .container .p_box .text h3{
+    font-size: 1.875rem; font-family: 'MaruBuri';
+    margin-bottom: 10px;
+}
+.description2 .container .p_box .text p{color: #777;text-transform:capitalize;}
+.description2 .container .p2_top{}
+.description2 .container .p2_top *{text-align: right;}
+.description2 .container .p2_top .img{margin-right: 80px;}
+.description2 .container .p2_top .img>span:nth-child(2){
+    background: url(../images/product_page/description/03_description1.jpg) center/cover;
+}
+.description2 .container .p2_bottom .img>span:nth-child(2){
+    background: url(../images/product_page/description/03_description2.jpg) center/cover;
+}
+.description2 .container .p2_bottom{}
+.description2 .container .p2_bottom *{text-align: left;}
+.description2 .container .p2_bottom .img{margin-left: 80px;}
+.description2 .container .text{margin: 150px 0;}
+.description2 .container .text h3{
+    font-size: 1.875rem; font-family: 'MaruBuri';
+    margin-bottom: 10px;
+}
+.description2 .container .text p{
+    color: #777;text-transform:capitalize;
+}
+/* ======================================= 5행 상품 설명2 끝*/
+/* ======================================= 6행 배너3*/
+.product_bn3{
+    width: 100%; height: 500px; background-color: red;
+    position: relative;
+}
+.product_bn3 .bn3_box{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.product_bn3 .bn3_box .bn3_text{
+    max-width: 800px; min-width: 300px;
+    position: absolute;  top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.product_bn3 .bn3_box .bn3_text *{color: #fff; line-height: 150%;}
+.product_bn3 .bn3_box .bn3_text h2{
+    font-size: 1.875rem; font-family: 'MaruBuri'; margin-bottom: 20px;
+}
+.product_bn3 .bn3_box .bn3_text p{
+    font-size: 0.875rem; color: #777; text-transform:capitalize;
+}
+.product_bn3 .img{
+    width: 100%; height: 100%;
+    position: absolute; top: 0; left: 0;
+    background: url(../images/product_page/description/04_description_banner.jpg) center/cover;
+}
+/* ======================================= 6행 배너3 끝*/
+/* ======================================= 7행 제품 성능*/
+.performance{width: 100%; background-color: #000; padding: 150px 0;}
+.performance *{color: #fff; text-align: left; line-height: 1.5;}
+.performance .container{
+    max-width: 1350px; min-width: 300px; margin: 0 auto;
+}
+.performance .container .performance_top{margin-bottom: 150px;}
+.performance .container .performance_bottom{}
+.performance .container .performance_box{} /* 공통 */
+.performance .container .performance_box>h2 {
+    font-size: 1.875rem; font-family: 'MaruBuri'; padding: 30px 0;
+    border-bottom: 1px solid #333;
+}
+.performance .container .performance_box>p {
+    margin-top: 30px; color: #777; text-transform:capitalize;
+}
+.performance .container .performance_bottom .title{
+    display: flex; justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid #333;
+}
+.performance .container .performance_bottom .title h2{
+    font-size: 1.875rem; font-family: 'MaruBuri'; 
+}
+.performance .container .performance_bottom .title button{
+    border: 1px solid #D4AF37; padding: 10px 20px; color: #D4AF37;
+}
+.performance .container .performance_bottom .text_box{
+    margin-top: 30px; padding: 10px 0;
+}
+.performance .container .performance_bottom .text_box .text{
+    max-width: 1200px; min-width: 300px; margin: 0 auto;
+    display: flex; justify-content: space-between;  padding: 20px 0;
+}
+.performance .container .performance_bottom .text_box .text li{
+    width: 100%;
+}
+.performance .container .performance_bottom .text_box .text li>h3{}
+.performance .container .performance_bottom .text_box .text li>p{
+    margin: 5px 0;
+    color: #777; text-transform:capitalize;
+}
+/* ======================================= 7행 제품 성능 끝*/
+/* ======================================= 8행 리뷰*/
+.review_menu{width: 100%; background-color: #000;}
+.review_menu *{color: #fff;}
+.review_menu .rai_menu{
+    display: flex; position: relative;
+}
+.review_menu .rai_menu::after{
+    content: ""; position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 1px; background-color: #777;
+}
+.review_menu .rai_menu a{
+    display: block; padding: 20px 0; width: 100%; font-size: 1.5rem;
+}
+.review_menu .rai_menu a:first-child{border: 1px solid #777;color: #D4AF37;}
+.review_menu .rai_menu a:hover{
+    border: 1px solid #777;
+    color: #D4AF37;
+}
+.review{height: 200px; background-color: #000;}
+/* ---------------------- */
+.review{width: 100%; height: 100%; background-color: #000;padding: 150px 0;}
+.review *{color: #fff;}
+.review .container{
+    max-width: 1350px; min-width: 300px; margin: 0 auto;
+}
+/* 평점 */
+.review .container .review_box{width: 100%;}
+.review .container .review_box .r_box{
+    width: 100%; display: flex; align-items: center;
+}
+.review .container .review_box .r_box .review_s{
+    width: 165px; display: flex; align-items: center;
+    margin-right: 40px;
+}
+.review .container .review_box .r_box .review_s>p{
+    width: 20px; margin-right: 10px; padding: 5px 0;
+
+}
+.review .container .review_box .r_box .review_s>p img{width: 100%;}
+.review .container .review_box .r_box .review_s>p:last-child{margin-right: 0; font-size: 0.75rem;}
+.review .container .review_box .r_box>p{width: 100%; height: 1px; background-color: #777;}
+.review .container .review_box .r_box1>p{ width: 100%; height: 1px; background-color: #D4AF37;}
+.review .container .review_box .r_box1 .s_5>p:last-child em{color: #D4AF37;}
+/* ======================================= 8행 리뷰 끝*/
+
+
+/* ======================================= 움직이는 메뉴 */
+#product_moving{ display: none;
+    width: 100%;background-color: #000; border-top: 1px solid #fff;
+    /* position: sticky; left: 0; bottom: 0; z-index: 20; */
+}
+#product_moving *{color: #fff; text-align: left;}
+#product_moving .moving{
+    width: 100%; padding: 20px;
+    display: flex; justify-content: space-between;
+}
+#product_moving .moving .product_name{
+    display: flex; align-items: center;
+}
+#product_moving .moving .product_name .moving_img{
+    width: 80px; height: 80px; margin-right: 20px;
+}
+#product_moving .moving .product_name .moving_img img{width: 100%;}
+#product_moving .moving .product_name .moving_text{}
+#product_moving .moving .product_name .moving_text h2{
+    font-size: 1.25rem; font-family: 'MaruBuri';
+    margin-bottom: 10px;
+}
+#product_moving .moving .product_name .moving_text>p{
+    font-size: 0.75rem; color: #777;
+    margin-bottom: 10px;
+}
+#product_moving .moving .product_name .moving_text .color_price{display: flex;}
+#product_moving .moving .product_name .moving_text .color_price .color{display: flex; margin-right: 15px;}
+#product_moving .moving .product_name .moving_text .color_price .color>p{
+    font-size:0.75rem; margin-right: 10px; font-weight: 600;
+}
+#product_moving .moving .product_name .moving_text .color_price .color>p:last-child{
+    margin-right: 0; font-weight: 300; color: #777;
+}
+#product_moving .moving .product_name .moving_text .color_price .price{
+    font-size:0.75rem;
+}
+#product_moving .moving .product_name .moving_text .color_price .price>p{color: #D4AF37;}
+#product_moving .moving .product_btn{
+    width: 332px; display: flex; 
+}
+#product_moving .moving .product_btn button{
+    text-align: center;
+    border: 1px solid #fff;
+    display: block; width: 100%;
+}
+#product_moving .moving .product_btn button:first-child{
+    margin-right: 10px; background-color: #fff; color: #000;
+}
+#product_moving .moving .product_btn button:last-child{margin-right: 0;}
+/* ======================================= 움직이는 메뉴 끝 */
 
