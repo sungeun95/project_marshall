@@ -27,16 +27,19 @@
 }
 .snp_container .snp_box{
     margin-right: 15px;
+    
 }
+.snp_container .p_a:hover .snp_img img{transform: scale(1.1);}
+.snp_container .p_a:hover .snp_text .snp_text_top h3{color: #D4AF37;}
 .snp_container .snp_box:last-child{margin-right: 0px;}
-.snp_container .snp_box .snp_img{width: 100%; margin-bottom: 15px;}
+.snp_container .snp_box .snp_img{width: 100%; margin-bottom: 15px; overflow: hidden;}
 .snp_container .snp_box .snp_img img{width: 100%;}
 .snp_container .snp_box .snp_text{}
 .snp_container .snp_box .snp_text .snp_text_top{
     display: flex; justify-content: space-between;
     align-items: center; margin-bottom: 8px;
 }
-.snp_container .snp_box .snp_text .snp_text_top h3{font-weight: 600;}
+.snp_container .snp_box .snp_text .snp_text_top h3{font-weight: 600; margin-bottom: 5px;}
 .snp_container .snp_box .snp_text .snp_text_top>p{
     color: #D4AF37; font-size: 0.875rem;
 }
@@ -44,8 +47,8 @@
     font-size: 0.75rem; margin-right: 10px;
 }
 .snp_container .snp_box .snp_text>p{
-    width: 100%;
-    text-align: left; font-size: 0.875rem; font-weight: 300;
+    width: 100%; color: #777; text-transform:capitalize;
+    text-align: left; font-size: 0.875rem; font-weight: 200;
 }
 /* ==================================================2행 끝 */
 /* ==================================================3행 배너 */
