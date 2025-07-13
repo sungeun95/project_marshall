@@ -164,5 +164,6 @@
     .review_a .container .user_review .user_box .user_img{
         width: 100%; 
     }
+    .review_a .container .user_review .user_box .user_text .user_top{padding: 10px 0;}
     /* ==================================8행 끝 */
 }
