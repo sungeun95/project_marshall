@@ -101,7 +101,7 @@
     .product_bn .text p{line-height: 150px; font-size: 1.125rem;}
     /* ==================================2행 끝 */
     /* ==================================3행 */
-    .description{padding: 10px;}
+    .description{padding: 50px 10px;}
     .description .container{width: 100%; height: 100%;}
     .description .container .ny_m_box{position: static;}
     .description .container .room_box{position: static;}
@@ -118,10 +118,10 @@
     .description .container .img>p:nth-child(3){margin-top: 75px;}
     /* ==================================3행 끝 */
     /* ==================================4행 */
-    .product_bn2{height: 200px;}
+    .product_bn2{display: none;}
     /* ==================================4행 끝 */
     /* ==================================5행  */
-    .description2{padding: 10px; height: 100%;}
+    .description2{padding: 10px 10px 50px 10px; height: 100%;}
     .description2 .container .p_box{
         width: 100%; height: 100%; display: block;
     }
@@ -131,7 +131,7 @@
     .description2 .container .p_box .text h3{font-size: 1.125rem;}
     .description2 .container .p_box .text p{font-size: 0.625rem;}
     .description2 .container .text{margin: 20px 0;}
-    .description2 .container>.text{margin: 50px 0;}
+    .description2 .container>.text{margin: 80px 0;}
     .description2 .container .text h3{font-size: 1.125rem;}
     .description2 .container .text p{font-size: 0.625rem;}
     /* ==================================5행 끝 */
@@ -155,6 +155,14 @@
     /* ==================================8행  */
     .review_menu .rai_menu a{ font-size: 0.875rem;}
     /* -------- */
-    .review_a{display: none;}
+    .review_a{padding: 40px 10px 10px;}
+    .review_a .container .review_box{display: none;}
+    .review_a .container .title_box h2{font-size: 1rem;}
+    .review_a .container .title_box button{font-size: 0.625rem; margin-bottom: 20px;}
+    /* -------- */
+    .review_a .container .user_review .user_box{flex-flow: column nowrap; margin-bottom: 10px;}
+    .review_a .container .user_review .user_box .user_img{
+        width: 100%; 
+    }
     /* ==================================8행 끝 */
 }
