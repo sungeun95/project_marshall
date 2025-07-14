@@ -418,13 +418,13 @@
 .review_a .container .review_box .r_box1>p{ width: 100%; height: 1px; background-color: #D4AF37;}
 .review_a .container .review_box .r_box1 .s_5>p:last-child em{color: #D4AF37;}
 .review_a .container .title_box{display: flex; justify-content: space-between; }
-.review_a .container .title_box h2{font-size: 1.25rem; color: #D4AF37;}
+.review_a .container .title_box h2{font-size: 1.25rem; color: #D4AF37; margin-top: 7px;}
 .review_a .container .title_box button{
     padding: 10px 20px; border: 1px solid #D4AF37; color: #D4AF37; font-size: 0.75rem;margin-bottom: 30px;
 }
 /* ------------------ 평점 박스 */
 .review_a .container .user_review{
-     width: 100%; height: 100%; 
+    width: 100%; height: 100%; 
 }
 .review_a .container .user_review .user_box{
     display: flex;background-color: #262626; 
@@ -464,7 +464,7 @@
 .review_a .container .user_review .user_box .user_text .user_bottom li *{text-align: left;}
 .review_a .container .user_review .user_box .user_text .user_bottom li .user_title{margin-bottom: 5px;}
 .review_a .container .user_review .user_box .user_text .user_bottom li .user_content{
-     width: 100%; color: #777; text-transform:capitalize;
+    width: 100%; color: #777; text-transform:capitalize;
 }
 .review_a .container .user_review .user_box .user_text .user_bottom li:first-child>p{
     max-width: 1150px; min-width: 200px;
