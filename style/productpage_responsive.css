@@ -76,13 +76,17 @@
     #product .container .product_img .product_thumbnail{display: none;}
     #product .container .product_img .product_main_img>p img{display: block;}
     #product .container .product_text{padding: 0px 0; }
+    #product .container .product_text .restrict{margin-bottom: 20px;}
     #product .container .product_text .title h2{font-size: 1.375rem;}
     #product .container .product_text .title p{font-size: 0.75rem;}
+    #product .container .product_text .title{margin-bottom: 20px;}
     #product .container .product_text .detail>span{font-size: 0.5rem;}
-    #product .container .product_text .price{font-size: 1rem;}
+    #product .container .product_text .color_review{margin-bottom: 20px;}
+    #product .container .product_text .price{font-size: 1rem; margin-bottom: 20px; }
+    #product .container .product_text .but_box{margin-bottom: 20px;}
     #product .container .product_text .but_box>button{font-size: 0.625rem;}
     #product .container .product_text .but_box .purchase button{font-size: 0.625rem;}
-    #product .container .product_text .announcement{/* margin-bottom: 30px; */}
+    #product .container .product_text .announcement{margin-bottom: 20px;}
     #product .container .product_text .announcement .announcement_box .text p{font-size: 0.625rem;}
     #product .container .product_text .announcement .announcement_box .tmi>p{padding: 10px;}
     #product .container .product_text .announcement .bank .bank_box .img{display:none;}
