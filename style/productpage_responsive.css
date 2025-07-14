@@ -1,5 +1,5 @@
 @media screen and (max-width:1349px){ /* 태블릿 */
-    #product{padding: 130px 80px 50px;}
+    #product{padding: 130px 0px 50px;}
     #product .container{
         flex-flow: column nowrap; 
         height: 100%; max-width: 640px; min-width: 300px;
@@ -82,7 +82,7 @@
     #product .container .product_text .price{font-size: 1rem;}
     #product .container .product_text .but_box>button{font-size: 0.625rem;}
     #product .container .product_text .but_box .purchase button{font-size: 0.625rem;}
-    #product .container .product_text .announcement{margin-bottom: 30px;}
+    #product .container .product_text .announcement{/* margin-bottom: 30px; */}
     #product .container .product_text .announcement .announcement_box .text p{font-size: 0.625rem;}
     #product .container .product_text .announcement .announcement_box .tmi>p{padding: 10px;}
     #product .container .product_text .announcement .bank .bank_box .img{display:none;}
