@@ -91,6 +91,16 @@ header .header_bottom .menu_right>a img{}
     border: 1px solid #D4AF37;
     color: #D4AF37; font-weight: 500; margin-top: 30px;
 }
+
+main .marshall_s{margin-bottom: 56px;}
+main .marshall_s .swiper-pagination-bullet[aria-current=true]{background-color: #D4AF37;}
+main .marshall_s .swiper-pagination-bullet{
+    width: 10px; height: 10px; border-radius: 0;
+    border: 1px solid #D4AF37;
+    background: none; opacity: 1; margin-right: 15px;
+    
+}
+main .marshall_s .swiper-pagination-bullet:last-child{margin-right: 0;}
 /* ==================================================슬라이드 끝 */
 
 
@@ -133,7 +143,9 @@ footer .footer_bottom a:hover{color: #D4AF37; }
     .slide .swiper-wrapper .swiper-slide .slide_text p{
         margin-bottom: 20px;
     }
-    /* =====================================슬라이드 끝 */    /* =======================================================푸터 */
+    main .marshall_s{margin-bottom: 25px;}
+    /* =====================================슬라이드 끝 */   
+    /* =======================================================푸터 */
     footer{padding: 80px 80px;}
     footer .footer_top{
         width: 100%;
@@ -182,7 +194,7 @@ footer .footer_bottom a:hover{color: #D4AF37; }
     header .header_bottom .menu_right>a:first-child{display: none;}
     /* =====================================슬라이드 */
     .slide .swiper-wrapper{height: 350px;}
-    .slide .swiper-wrapper .swiper-slide .slide_text{bottom: 20px;}
+    .slide .swiper-wrapper .swiper-slide .slide_text{bottom: 10px;}
     .slide .swiper-wrapper .swiper-slide .slide_text h2{
         font-size: 1.125rem;
     }
@@ -190,8 +202,9 @@ footer .footer_bottom a:hover{color: #D4AF37; }
         font-size: 0.625rem;
     }
     .slide .swiper-wrapper .swiper-slide .slide_text button{
-        font-size: 0.625rem;
+        font-size: 0.625rem; margin-bottom: 50px; margin-top: 0;
     }
+    main .marshall_s{margin-bottom: 10px;}
     /* =====================================슬라이드 끝 */
     /* =======================================================푸터 */
     footer{padding: 30px 10px;}
