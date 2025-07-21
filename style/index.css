@@ -18,6 +18,9 @@
 .re .re_categories .categories_top .menu_main>button{
     padding: 10px 20px; border: 1px solid #D4AF37; color: #D4AF37; font-size: 0.875rem;
 }
+.re .re_categories .categories_top .menu_main>button:hover{
+    color: #fff; border: 1px solid #fff;
+}
 .re .re_categories .recommended_bottom{
     display: flex; position: relative;
 
@@ -111,6 +114,7 @@
     font-size: 0.875rem; color: #777;
     text-transform: capitalize;
 }
+.ns .nsall .ns_a .ns_text button:hover{color: #fff; border: 1px solid #fff;}
 .ns .nsall .ns_a .ns_text button{
     padding: 15px 30px; font-size: 0.875rem;
     border: 1px solid #D4AF37; color: #D4AF37; 
